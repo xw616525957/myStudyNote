@@ -28,7 +28,6 @@
 
 
 # 前言  
-  
 > 一直比较羡慕有些博主博客排版精致，比如文章的索引，引用块和代码块的样式等，当然还有一些开源代码库中readme中排版的样式也特别精致。只知道有Markdown这么个东西，因为太懒从来都没有好好看看Markdown的语法。最近打算整理下自己项目中的Readme说明，就大概看了下MarkDown的语法，粗略的看了一遍后深深的被她吸引，记录下来以供参考。  
 
 # markdown基础语法  
@@ -138,20 +137,20 @@ Markdown语法[^mark]
 ## **代码段**
 ``` javascript
 function GetData(){
-	$.ajax(url).success(function(data){
-		console.log(data);
-	}).error(function(s,s,d){
-		console.log(d);
-	})
+  $.ajax(url).success(function(data){
+    console.log(data);
+  }).error(function(s,s,d){
+    console.log(d);
+  })
 }
 ```
 ` ```javascript
 function GetData(){
-	$.ajax(url).success(function(data){
-		console.log(data);
-	}).error(function(s,s,d){
-		console.log(d);
-	})
+  $.ajax(url).success(function(data){
+    console.log(data);
+  }).error(function(s,s,d){
+    console.log(d);
+  })
 }```
 `
 # Markdown高级语法
@@ -169,18 +168,16 @@ function GetData(){
 ```  
 
 ##数学公式[^math]  
-$$\alpha  
-　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda　\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega$$
-**行内公式**:$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-**块级公式**：$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 ```
+  部分博客中不直接支持数学公式
   公式中常见的字母
 $$\alpha  
 　A　\beta　B　\gamma　\Gamma　\delta　\Delta　\epsilon　E \varepsilon　　\zeta　Z　\eta　H　\theta　\Theta　\vartheta \iota　I　\kappa　K　\lambda　\Lambda　\mu　M　\nu　N \xi　\Xi　o　O　\pi　\Pi　\varpi　　\rho　P \varrho　　\sigma　\Sigma　\varsigma　　\tau　T　\upsilon　\Upsilon \phi　\Phi　\varphi　　\chi　X　\psi　\Psi　\omega　\Omega$$
 **行内公式**:$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
-**块级公式**：$$	x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+**块级公式**：$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 ```
 ## 流程图  
+`在线博客基本不支持`
 ```flow
 st=>start: 开始  
 e=>end: 结束    
@@ -202,6 +199,7 @@ cond(yes)->e
 cond(no))->op
 ```
 ## 时序图
+`在线博客基本不支持`
 ```sequence
 Client->Server: request
 Note right of Server: 服务端响应
@@ -217,8 +215,8 @@ Server-->Client: response
 
 # Markdown相关软件
 >专为印象笔记（Evernote）打造的Markdown编辑器https://maxiang.io/  
->作为在线的Markdown编辑器，简书不错http://www.jianshu.com/  
-
+>作为在线的Markdown编辑器，GitHub，博客园，简书 都有支持
+>在线博客基本都不支持TOC生成目录，可以通过https://github.com/thlorenz/doctoc 生成目录，非常好用
 
 # 结语 
 >以上都是我看完语法后，自己一个个敲出来的，就当是以后的备用手册了，后面一边使用一边再完善吧。 
